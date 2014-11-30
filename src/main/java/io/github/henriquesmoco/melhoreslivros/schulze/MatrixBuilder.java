@@ -10,7 +10,7 @@ import java.util.Set;
 
 public class MatrixBuilder {
 
-    private Map<String, Integer> ballots = new HashMap<>();
+    private final Map<String, Integer> ballots = new HashMap<>();
 
     /**
      * Add votes that will compose the matrix of preferred candidates
@@ -21,7 +21,8 @@ public class MatrixBuilder {
      * @return
      */
     public MatrixBuilder addBallot(int voteCount, String orderedCandidates) {
-        ballots.put(orderedCandidates, voteCount);
+        int totalVotes = voteCount + ballots.getOrDefault(orderedCandidates, 0);
+        ballots.put(orderedCandidates, totalVotes);
         return this;
     }
 
