@@ -46,7 +46,8 @@ public class MatrixBuilder {
                 String nextCandidate = splitedCandidates[idxNext];
                 int rowIndex = allCandidates.indexOf(actualCandidate);
                 int colIndex = allCandidates.indexOf(nextCandidate);
-                matrix[rowIndex][colIndex] = qtdVotes;
+                int actualVotes = matrix[rowIndex][colIndex];
+                matrix[rowIndex][colIndex] = actualVotes + qtdVotes;
             }
         }
     }

@@ -32,7 +32,25 @@ public class MatrixBuilderTest {
                 .addBallot(1, "A>B>C")
                 .addBallot(1, "A>B>C")
                 .build();
-        System.out.println(Arrays.deepToString(matrix));
         assertEquals(matrix, expectedMatrix);
     }
+    
+    @Test
+    public void buildMatrix_OfUnorderedBallots_CreateMatrixWithSumOfTheVotes() {
+        MatrixBuilder matrixBuilder = new MatrixBuilder();
+        int[][] expectedMatrix = new int[][]{
+            //X, Y, Z
+            {0, 4, 1}, //X
+            {2, 0, 3}, //Y
+            {5, 3, 0} //Z
+        };
+        int[][] matrix = matrixBuilder
+                .addBallot(1, "X>Y>Z")
+                .addBallot(2, "Y>Z>X")
+                .addBallot(3, "Z>X>Y")
+                .build();
+        //System.out.println(Arrays.deepToString(matrix));
+        assertEquals(matrix, expectedMatrix);
+    }
+
 }
