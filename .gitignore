@@ -1,1 +1,7 @@
 /target/
+/.idea/
+/.settings/
+.project
+
+*.iml
+*.bat
