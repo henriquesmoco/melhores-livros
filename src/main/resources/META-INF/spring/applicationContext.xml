@@ -11,4 +11,6 @@
         <context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation"/>
     </context:component-scan>
 
+    <context:property-placeholder location="classpath*:META-INF/spring/*.properties"/>
+
 </beans>
