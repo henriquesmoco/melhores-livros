@@ -13,6 +13,7 @@
     <properties>
         <spring.version>4.1.2.RELEASE</spring.version>
         <hibernate.version>4.3.7.Final</hibernate.version>
+        <integration.test.baseurl>http://localhost:8080</integration.test.baseurl>
     </properties>
 
     <dependencies>
@@ -241,6 +242,11 @@
             <version>1.2</version>
         </dependency>
         <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.3.2</version>
+        </dependency>
+        <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib-nodep</artifactId>
             <version>3.1</version>
@@ -388,6 +394,7 @@
                     </includes>
                     <systemPropertyVariables>
                         <webdriver.chrome.driver>${env.WEBDRIVER.CHROME.DRIVER}</webdriver.chrome.driver>
+                        <baseUrl>${integration.test.baseurl}</baseUrl>
                     </systemPropertyVariables>
                 </configuration>
                 <executions>
