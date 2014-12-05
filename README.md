@@ -30,5 +30,5 @@ A idéia é fazer um showcase de tecnologias e a integração entre elas sem esq
 > Dependendo da sua IDE, você pode precisar baixar e/ou configurar o [Maven](http://maven.apache.org/).
 
 ##### Variáveis de ambiente
-> Para os testes de integração rodarem com o [Selenium Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/) é necessário configurar a variávei abaixo:<br/>
+> Para os testes de integração rodarem com o [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/) é necessário configurar a variável abaixo:<br/>
 > **webdriver.chrome.driver** = c:\path_to\chromedriver.exe
