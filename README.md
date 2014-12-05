@@ -21,7 +21,7 @@ A idéia é fazer um showcase de tecnologias e a integração entre elas sem esq
  * Tiles 3.0.5
  * Hibernate 4.3.7
  * HSQLDB 2.3.2
- * Selenium WebDriver 2.44.0
+ * Selenium Chrome WebDriver 2.44.0
  * Jetty 9.2.5.v20141112
  * Jetty Runner 7.5.4.v20111024
 
@@ -30,5 +30,5 @@ A idéia é fazer um showcase de tecnologias e a integração entre elas sem esq
 > Dependendo da sua IDE, você pode precisar baixar e/ou configurar o [Maven](http://maven.apache.org/).
 
 ##### Variáveis de ambiente
-> Para os testes de integração rodarem com o Selenium WebDriver é necessário configurar a variávei abaixo:<br/>
+> Para os testes de integração rodarem com o [Selenium Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/) é necessário configurar a variávei abaixo:<br/>
 > **webdriver.chrome.driver** = c:\path_to\chromedriver.exe
