@@ -1,5 +1,4 @@
 #Melhores Livros
-----------------
 
 ####Vote no seu livro preferido!
 Neste desafio [TIDEXA](http://tidexa.com) você cria uma eleição e todo mundo vota nos seus livros preferidos.
@@ -31,5 +30,5 @@ A idéia é fazer um showcase de tecnologias e a integração entre elas sem esq
 > Dependendo da sua IDE, você pode precisar baixar e/ou configurar o [Maven](http://maven.apache.org/).
 
 ##### Variáveis de ambiente
-> Para os testes de integração rodarem com o Selenium WebDriver é necessário configurar a variávei abaixo:
+> Para os testes de integração rodarem com o Selenium WebDriver é necessário configurar a variávei abaixo:<br/>
 > **webdriver.chrome.driver** = c:\path_to\chromedriver.exe
